@@ -155,5 +155,4 @@ if __FILE__ == $0
   puts "Total steps to get mail:    #{steps.mail_total}"
   puts "Total steps to grocery:    #{steps.grocery_total}"
   puts "Total steps walked on walk #{steps.walk_total}"
-
 end
