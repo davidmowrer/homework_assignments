@@ -2,14 +2,14 @@
 # Totals number of steps taken  This shows various places I walked to.
 # Tracking your steps by different categories.
 class StepsWalked
-  attr_reader :total, :bath_total, :bed_total, :kitchen_total, :front_total,
+  attr_reader :total, :bath_total, :bed_total, :kitchen_total, :front_room_total,
               :car_total, :grocery_total, :mail_total, :walk_total
 
   def initialize
     @total = 0
     @bath_total = 0
     @bed_total = 0
-    @front_total =
+    @front_room_total =
     @kitchen_total = 0
     @walk_total = 0
     @mail_total = 0
@@ -34,7 +34,7 @@ class StepsWalked
 
   def frontroom(steps)
     @total += steps
-    @front_total += steps
+    @front_room_total += steps
   end
 
   def mail(steps)
@@ -144,14 +144,15 @@ if __FILE__ == $0
 
   puts 'Steps to bathroom from kitchen 22'
   steps.bathroom(22)
+  puts
   puts "Total steps:               #{steps.total}"
   puts
-  puts "Total steps to bathroom:   #{steps.bath_total}"
-  puts "Total steps to bedroom:    #{steps.bed_total}"
-  puts "Total steps to kitchen:    #{steps.kitchen_total}"
-  puts "Total steps to frontroom:  #{steps.front_total}"
-  puts "Total septs to car:        #{steps.car_total}"
-  puts "Total steps to get mail:   #{steps.mail_total}"
+  puts "Total steps to bath room:   #{steps.bath_total}"
+  puts "Total steps to bed room:     #{steps.bed_total}"
+  puts "Total steps to kitchen:     #{steps.kitchen_total}"
+  puts "total steps to front room:   #{steps.front_room_total}"
+  puts "Total steps to car:         #{steps.car_total}"
+  puts "Total steps to get mail:    #{steps.mail_total}"
   puts "Total steps to grocery:    #{steps.grocery_total}"
   puts "Total steps walked on walk #{steps.walk_total}"
 
