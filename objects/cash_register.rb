@@ -39,7 +39,7 @@ if __FILE__ == $0
 
   puts 'Paying $10.00'
   register.pay(10.00)
-  puts 'Change $3.61'
-  register.pay(3.61)
+  puts 'Change $3.88'
+  register.pay(3.88)
   puts "New total: #{register.total.round(2)}"
 end
