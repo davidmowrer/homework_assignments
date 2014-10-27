@@ -32,7 +32,7 @@ puts "that is near a/an #{noun1} or up on a/an #{noun2}."
 puts "A good vacation place is one where you can ride #{plural_noun1}"
 puts "or play #{game} or go hunting for #{plural_noun2}. I like"
 puts "to spend my time #{verb1} or #{verb2}."
-puts 'When parents go on vacation, they spend their time eating'
+puts 'When parents go on a vacation, they spend their time eating'
 puts "three #{plural_noun3} a day, and fathers play golf, and mothers"
 puts "sit around #{verb3}. Last summer, my little brother"
 puts "fell in a/an #{noun3} and got poison #{plant} all"
