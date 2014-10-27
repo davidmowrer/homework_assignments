@@ -7,7 +7,7 @@ end
 puts
 print 'T-'
 print numbers.reverse.join(', ')
-puts '... BLASTOFF!'
+puts '...  BLASTOFF!'
 puts 'The last element is ' + numbers[9].to_s
 puts 'The first number is ' + numbers[0].to_s
 puts 'The third element is ' + numbers[2].to_s
